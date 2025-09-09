@@ -58,7 +58,7 @@ The full report is available here:
 ## 💻 SQL Queries
 All analysis was performed in **BigQuery**.  
 You can find the queries here:  
-📂 [queries](/queries.sql)
+📂 [queries](/queries)
 
 Example:
 
