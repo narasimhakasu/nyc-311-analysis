@@ -19,6 +19,13 @@ The goal was to identify complaint patterns, borough-level trends, agency respon
 - Adjust seasonal/weekend staffing  
 
 ---
+## 🔮 Limitations & Future Work
+- Dataset only covers Jan–Nov 2021 (not full year).
+- Some records had missing response times (handled in cleaning).
+- Future work could include:
+  - Predicting complaint volumes with time-series models.
+  - Building an interactive geospatial map of complaint hotspots.
+
 
 ## 🛠️ Tools Used
 - **Google BigQuery** → SQL for cleaning & aggregation  
@@ -33,6 +40,15 @@ The goal was to identify complaint patterns, borough-level trends, agency respon
 4. Dashboard design in Looker Studio  
 
 ---
+
+
+## 🗂️Dataset Schema (Main Columns)
+- `created_date` – Date complaint was logged
+- `complaint_group` – Category of issue (e.g., Noise, Heating, etc.)
+- `agency` – Department handling the complaint
+- `borough` – NYC borough
+- `resolution_time` – time taken to close complaint
+
 
 ## 🔑 Key Findings
 - **Complaint Patterns:** Noise (30.5%), Parking & Traffic (21.5%), Water (11.03%)  = ~63% of all requests  
