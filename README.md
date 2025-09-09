@@ -58,7 +58,7 @@ The full report is available here:
 ## 💻 SQL Queries
 All analysis was performed in **BigQuery**.  
 You can find the queries here:  
-📂 [queries.sql](/queries.sql)
+📂 [queries](/queries.sql)
 
 Example:
 
@@ -67,7 +67,7 @@ Example:
 SELECT complaint_type, 
        COUNT(*) AS total_requests,
        ROUND(100 * COUNT(*) / SUM(COUNT(*)) OVER(), 2) AS pct_requests
-FROM `nyc_311.requests`
+FROM `nyc-311-service-requests.nyc_311.nyc_311_clean`
 GROUP BY complaint_type
 ORDER BY total_requests DESC;
 ```
