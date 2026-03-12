@@ -1,5 +1,5 @@
 -- Step 1: Create Cleaned Table
-CREATE OR REPLACE TABLE `nyc-311-service-requests.nyc_311.nyc_311_clean` AS
+CREATE OR REPLACE TABLE `nyc-311-servicerequests.processed.clean_data` AS
 SELECT
   -- Borough cleaning
   CASE 
@@ -44,7 +44,7 @@ SELECT
 
   
 
-FROM `nyc-311-service-requests.nyc_311.table_raw`
+FROM `nyc-311-servicerequests.staging.raw_data`
 WHERE created_date IS NOT NULL
   AND closed_date IS NOT NULL
   AND closed_date >= created_date;
